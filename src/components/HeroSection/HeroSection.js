@@ -11,6 +11,7 @@ function HeroSection({
   headline,
   description,
   buttonLabel,
+  buttonPath,
   img,
   alt,
   imgStart,
@@ -38,12 +39,12 @@ function HeroSection({
                   className={
                     lightTextDesc
                       ? 'home__hero-subtitle'
-                      : 'home_hero-subtitle dark'
+                      : 'home__hero-subtitle dark'
                   }
                 >
                   {description}
                 </p>
-                <Link to="/sign-up">
+                <Link to={buttonPath}>
                   <Button buttonSize="btn--wide" ButtonColor="blue">
                     {buttonLabel}
                   </Button>
